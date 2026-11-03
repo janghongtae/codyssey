@@ -5,7 +5,7 @@
 
 ## 1. 환경 정보
 - OS: Windows 11 pro(버전:26H2)
-- 작성일: 2026-_11-3
+- 작성일: 2026-11-3
 
 ## 2. 설치 및 설정 과정
 
@@ -19,7 +19,10 @@
 - 설치 결과: Installation succeeded <img width="1043" height="729" alt="스크린샷 2026-11-03 162520" src="https://github.com/user-attachments/assets/1fdf9558-d316-40d1-88e5-1a0a81d962a7" />
 
 - 확인 명령어: `docker --version`
-- 출력 결과: (Docker version 29.9.2, build a82e528)
+- 출력 결과:
+```
+Docker version 29.9.2, build a82e528
+```
 - 설명: 공식 사이트에서 AMD64 버전을 받아 설치 완료함.
   
 ### CPU 아키텍처 확인
@@ -41,10 +44,10 @@ To generate this message, Docker took the following steps:
  4. The Docker daemon streamed that output to the Docker client, which sent it
     to your terminal.)
 - 설명:
-- Docker 클라이언트가 Docker 데몬(엔진)에게 요청
-데몬이 Docker Hub에서 hello-world 이미지를 다운로드 (amd64 버전!)
-그 이미지로 컨테이너를 생성해서 실행
-실행 결과를 터미널에 출력
+  1. Docker 클라이언트가 데몬에게 요청
+  2. 데몬이 Docker Hub에서 이미지 다운로드 (amd64)
+  3. 그 이미지로 컨테이너 생성 및 실행
+  4. 실행 결과를 터미널에 출력
 
 ### Docker란?
 - 컨테이너를 쉽게 생성/실행/관리할 수 있게 해주는 도구
