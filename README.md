@@ -16,8 +16,8 @@
   
 ### 2-2. Docker Desktop 설치
 - 설치 버전: Docker Desktop 4.97.0
-- 설치 결과: Installation succeeded (<img width="1043" height="729" alt="스크린샷 2026-11-03 162520" src="https://github.com/user-attachments/assets/1fdf9558-d316-40d1-88e5-1a0a81d962a7" />
-)
+- 설치 결과: Installation succeeded <img width="1043" height="729" alt="스크린샷 2026-11-03 162520" src="https://github.com/user-attachments/assets/1fdf9558-d316-40d1-88e5-1a0a81d962a7" />
+
 - 확인 명령어: `docker --version`
 - 출력 결과: (Docker version 29.9.2, build a82e528)
 - 설명: 공식 사이트에서 AMD64 버전을 받아 설치 완료함.
