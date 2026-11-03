@@ -3,50 +3,6 @@
 
 # 개발 워크스테이션 구축 보고서
 
-1. 깃허브 계정 생성 및 Git 설치
-
-GitHub 계정 만들기: github.com에서 회원가입
-Git 설치하기: 내 컴퓨터의 파일을 깃허브에 올리려면 'Git'이라는 프로그램이 필요합니다. git-scm.com에서 본인의 운영체제(Windows/Mac)에 맞는 버전을 설치하세요.
-2. 내 컴퓨터에 사용자 정보 설정하기
-설치가 끝났다면 터미널(Windows는 CMD 또는 Git Bash)을 열고, 내가 누구인지 Git에게 알려줘야 합니다. 깃허브에 가입한 정보와 동일하게 입력하세요.
-# 사용자 이름 설정
-git config --global user.name "janghongtae"
-
-# 사용자 이메일 설정
-git config --global user.email "redsun3810.gmailcom"
-# 1. 현재 폴더를 Git이 관리하도록 설정
-git init
-
-# 2. 올릴 파일들을 장바구니에 담기 (.은 모든 파일을 의미)
-git add .
-
-# 3. 장바구니에 담긴 파일들에 메모 남기기 (버전 생성)
-git commit -m "첫 번째 업로드"
-
-# 4. 내 컴퓨터와 온라인 저장소 연결 (주소 부분에 복사한 주소 붙여넣기)
-git remote add origin https://github.com/아이디/저장소이름.git
-
-# 5. 온라인 저장소로 실제로 보내기
-git push -u origin main
-
-redsun38100018@GNIA-C202-I05 UCRT64 ~ (master)
-터미널 맨 앞을 보면 경로가 ~ (물결표)로 되어 있죠? 이것은 **사용자 홈 디렉토리(내 컴퓨터 전체의 개인 폴더)**를 의미합니다.
-# 홈 디렉토리에 잘못 생성된 git 저장소 설정을 삭제합니다.
-rm -rf .git
-# 1. 작업할 프로젝트 폴더로 이동 (경로가 맞는지 확인하세요)
-cd /c/test/작업실
-
-# 2. 이동한 폴더에서 다시 git 초기화
-git init
-
-# 3. 브랜치 이름을 main으로 설정
-git branch -M main
-git add .
-git commit -m "첫 번째 업로드"
-git remote add origin https://github.com/아이디/저장소이름.git
-git push -u origin main
-redsun38100018@GNIA-C202-I05 UCRT64 /c/test/작업실 (main)
-
 ## 1. 환경 정보
 - OS: Windows 11 pro(버전:26H2)
 - 작성일: 2026-_11-3
@@ -96,20 +52,75 @@ Docker 🐳 = 그 도시락을 만들고 실행하는 전체 시스템/도구
 클라이언트(주문) + 데몬(주방)으로 동작
 Docker Desktop = 윈도우에서 쉽게 쓰는 묶음 패키지
 
+##3. 깃허브 계정 생성 및 Git 설치
+
+# GitHub 계정 만들기: github.com에서 회원가입
+Git 설치하기: 내 컴퓨터의 파일을 깃허브에 올리려면 'Git'이라는 프로그램이 필요합니다. git-scm.com에서 본인의 운영체제(Windows/Mac)에 맞는 버전을 설치.
+
+# 내 컴퓨터에 사용자 정보 설정하기
+설치가 끝났다면 터미널(Windows는 CMD 또는 Git Bash)을 열고, 내가 누구인지 Git에게 알려줘야 합니다. 깃허브에 가입한 정보와 동일하게 입력하세요.
+
+# 사용자 이름 설정
+git config --global user.name "username"
+
+# 사용자 이메일 설정
+git config --global user.email "user.name@example.com"
+
+# 1. 현재 폴더를 Git이 관리하도록 설정
+git init
+
+# 2. 올릴 파일들을 장바구니에 담기 (.은 모든 파일을 의미)
+git add .
+
+# 3. 장바구니에 담긴 파일들에 메모 남기기 (버전 생성)
+git commit -m "첫 번째 업로드"
+
+# 4. 내 컴퓨터와 온라인 저장소 연결 (주소 부분에 복사한 주소 붙여넣기)
+git remote add origin https://github.com/아이디/저장소이름.git
+
+# 5. 온라인 저장소로 실제로 보내기
+git push -u origin main
+
+redsun38100018@GNIA-C202-I05 UCRT64 ~ (master)
+터미널 맨 앞을 보면 경로가 ~ (물결표)로 되어 있죠? 이것은 **사용자 홈 디렉토리(내 컴퓨터 전체의 개인 폴더)**를 의미합니다.
+# 홈 디렉토리에 잘못 생성된 git 저장소 설정을 삭제합니다.
+rm -rf .git
+# 1. 작업할 프로젝트 폴더로 이동 (경로가 맞는지 확인하세요)
+cd /c/test/작업실
+
+# 2. 이동한 폴더에서 다시 git 초기화
+git init
+
+# 3. 브랜치 이름을 main으로 설정
+git branch -M main
+git add .
+git commit -m "첫 번째 업로드"
+git remote add origin https://github.com/아이디/저장소이름.git
+git push -u origin main
+redsun38100018@GNIA-C202-I05 UCRT64 /c/test/작업실 (main)
+
+
   
 ## 3. 트러블슈팅
-### 문제 1: (제목)
-- 상황:
-- 원인:
-- 해결:
+### 문제 1: 홈 디렉토리에 잘못 git init 함
+상황: 터미널 경로가 ~ (홈 디렉토리) 인 상태에서 git init 실행함. 프롬프트에 (master)가 떠서 잘못된 위치임을 알게 됨.
+원인: 작업 폴더로 이동하지 않고 홈에서 바로 초기화해서, 개인 폴더 전체가 Git 관리 대상이 되어버림.
+해결: rm -rf .git 으로 잘못된 설정을 삭제하고, cd /c/test/작업실 로 이동한 뒤 다시 git init 함.
+배운 점: git init은 반드시 '작업할 폴더 안'에서 실행해야 한다.
+### 문제 2: Docker 버전 번호가 두 개라 헷갈림
+- 상황: 설치 화면은 4.97.0인데 docker --version은 29.9.2가 나옴.
+- 원인: 4.97.0은 Docker Desktop(앱), 29.9.2는 Docker 엔진 버전으로
+         서로 다른 것을 가리키는 번호였다.
+- 해결: 두 버전을 구분해서 보고서에 각각 기록함.
+- 배운 점: 하나의 프로그램에도 여러 버전 번호가 있을 수 있다.
 
 ## 4. 느낀 점
 
-```
-docker --version
-```
-
-![설명글](images/파일이름.png)
+- 처음엔 Docker가 막연히 어렵게 느껴졌지만, 컨테이너를
+  '도시락'에 비유하니 개념이 잡혔다.
+- 홈 디렉토리에 git init을 한 실수를 직접 겪으면서,
+  명령어는 '어디서 실행하는지'가 중요하다는 걸 배웠다.
+- 다음엔 작업 전에 현재 경로를 꼭 확인하는 습관을 들여야겠다.
 
 ### CPU 아키텍처 확인
 - 명령어: `echo $env:PROCESSOR_ARCHITECTURE`
