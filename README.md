@@ -114,6 +114,15 @@ redsun38100018@GNIA-C202-I05 UCRT64 /c/test/작업실 (main)
 - 해결: 두 버전을 구분해서 보고서에 각각 기록함.
 - 배운 점: 하나의 프로그램에도 여러 버전 번호가 있을 수 있다.
 
+### 문제 3: Docker 데몬 연결 실패
+- 상황: docker run hello-world 실행 시
+         "failed to connect to the docker API ...
+          check if the daemon is running" 오류 발생.
+- 원인: Docker Desktop(데몬/엔진)이 꺼진 상태에서 명령을 입력함.
+- 해결: Docker Desktop을 실행하고 고래 아이콘이 준비될 때까지
+         기다린 뒤 다시 실행하니 정상 작동함.
+- 배운 점: Docker 명령은 데몬(엔진)이 켜져 있어야 동작한다.
+
 ## 4. 느낀 점
 
 - 처음엔 Docker가 막연히 어렵게 느껴졌지만, 컨테이너를
