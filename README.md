@@ -81,32 +81,15 @@ git remote add origin https://github.com/아이디/저장소이름.git
 # 5. 온라인 저장소로 실제로 보내기
 git push -u origin main
 
-redsun38100018@GNIA-C202-I05 UCRT64 ~ (master)
-터미널 맨 앞을 보면 경로가 ~ (물결표)로 되어 있죠? 이것은 **사용자 홈 디렉토리(내 컴퓨터 전체의 개인 폴더)**를 의미합니다.
-# 홈 디렉토리에 잘못 생성된 git 저장소 설정을 삭제합니다.
-rm -rf .git
-# 1. 작업할 프로젝트 폴더로 이동 (경로가 맞는지 확인하세요)
-cd /c/test/작업실
-
-# 2. 이동한 폴더에서 다시 git 초기화
-git init
-
-# 3. 브랜치 이름을 main으로 설정
-git branch -M main
-git add .
-git commit -m "첫 번째 업로드"
-git remote add origin https://github.com/아이디/저장소이름.git
-git push -u origin main
-redsun38100018@GNIA-C202-I05 UCRT64 /c/test/작업실 (main)
-
-
   
 ## 3. 트러블슈팅
+
 ### 문제 1: 홈 디렉토리에 잘못 git init 함
 상황: 터미널 경로가 ~ (홈 디렉토리) 인 상태에서 git init 실행함. 프롬프트에 (master)가 떠서 잘못된 위치임을 알게 됨.
 원인: 작업 폴더로 이동하지 않고 홈에서 바로 초기화해서, 개인 폴더 전체가 Git 관리 대상이 되어버림.
 해결: rm -rf .git 으로 잘못된 설정을 삭제하고, cd /c/test/작업실 로 이동한 뒤 다시 git init 함.
 배운 점: git init은 반드시 '작업할 폴더 안'에서 실행해야 한다.
+
 ### 문제 2: Docker 버전 번호가 두 개라 헷갈림
 - 상황: 설치 화면은 4.97.0인데 docker --version은 29.9.2가 나옴.
 - 원인: 4.97.0은 Docker Desktop(앱), 29.9.2는 Docker 엔진 버전으로
