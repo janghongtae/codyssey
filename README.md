@@ -122,6 +122,3 @@ git push -u origin main
   명령어는 '어디서 실행하는지'가 중요하다는 걸 배웠다.
 - 다음엔 작업 전에 현재 경로를 꼭 확인하는 습관을 들여야겠다.
 
-
-
-- <img width="1043" height="729" alt="image" src="https://github.com/user-attachments/assets/46abe3ce-9cf0-41ba-b5c6-55e23c610373" />
