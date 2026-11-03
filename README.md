@@ -1,5 +1,8 @@
 # codyssey
 코디세이1-1 프로젝트
+
+# 개발 워크스테이션 구축 보고서
+
 1. 깃허브 계정 생성 및 Git 설치
 
 GitHub 계정 만들기: github.com에서 회원가입
@@ -42,3 +45,42 @@ git add .
 git commit -m "첫 번째 업로드"
 git remote add origin https://github.com/아이디/저장소이름.git
 git push -u origin main
+redsun38100018@GNIA-C202-I05 UCRT64 /c/test/작업실 (main)
+
+## 1. 환경 정보
+- OS: Windows 11 pro(버전:26H2)
+- 작성일: 2026-_11-3
+
+## 2. 설치 및 설정 과정
+
+### 2-1. Git
+- 확인 명령: `git --version`
+- 출력 결과: `git version 2.56.0`
+- 설명: Git이 이미 설치되어 있어 별도 설치 없이 버전만 확인함.
+
+### 2-2. Docker Desktop
+- 설치 과정: (여기에 적기)
+- 확인 명령 / 출력:
+
+- - 스크린샷: ![docker 설치](images/docker.png)
+
+## 3. 트러블슈팅
+### 문제 1: (제목)
+- 상황:
+- 원인:
+- 해결:
+
+## 4. 느낀 점
+
+```
+docker --version
+```
+
+![설명글](images/파일이름.png)
+
+### CPU 아키텍처 확인
+- 명령어: `echo $env:PROCESSOR_ARCHITECTURE`
+- 출력 결과: AMD64
+- 설명: 내 PC는 AMD64 아키텍처이므로 Docker Desktop도 AMD64 버전을 설치함.
+
+- <img width="1043" height="729" alt="image" src="https://github.com/user-attachments/assets/46abe3ce-9cf0-41ba-b5c6-55e23c610373" />
