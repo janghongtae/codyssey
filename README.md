@@ -57,10 +57,10 @@ To generate this message, Docker took the following steps:
 - Docker Desktop은 윈도우에서 Docker를 편리하게 쓰는 패키지
 
 **✅ 정리**
--컨테이너 🍱 = 프로그램을 담은 도시락
--Docker 🐳 = 그 도시락을 만들고 실행하는 전체 시스템/도구
--클라이언트(주문) + 데몬(주방)으로 동작
--Docker Desktop = 윈도우에서 쉽게 쓰는 묶음 패키지
+- 컨테이너 🍱 = 프로그램을 담은 도시락
+- Docker 🐳 = 그 도시락을 만들고 실행하는 전체 시스템/도구
+- 클라이언트(주문) + 데몬(주방)으로 동작
+- Docker Desktop = 윈도우에서 쉽게 쓰는 묶음 패키지
 
 ## 3. 깃허브 계정 생성 및 Git 설치
 
@@ -70,34 +70,22 @@ Git 설치하기: 내 컴퓨터의 파일을 깃허브에 올리려면 'Git'이�
 # 내 컴퓨터에 사용자 정보 설정하기
 설치가 끝났다면 터미널(Windows는 CMD 또는 Git Bash)을 열고, 내가 누구인지 Git에게 알려줘야 합니다. 깃허브에 가입한 정보와 동일하게 입력하세요.
 
-## 사용자 이름 설정
-```
+### 3-1. 사용자 정보 설정
+사용자 이름과 이메일을 등록합니다. (GitHub 가입 정보와 동일하게)
+```bash
 git config --global user.name "username"
-```
-## 사용자 이메일 설정
-```
 git config --global user.email "user.name@example.com"
 ```
-## 1. 현재 폴더를 Git이 관리하도록 설정
+
+### 3-2. 저장소 생성 및 업로드
+```bash
+git init                  # 현재 폴더를 Git 관리 대상으로
+git add .                 # 모든 파일을 스테이지에 담기
+git commit -m "첫 업로드"  # 버전 기록 남기기
+git remote add origin https://github.com/아이디/저장소이름.git  # 원격 연결
+git push -u origin main   # 온라인 저장소로 전송
 ```
-git init
-```
-## 2. 올릴 파일들을 장바구니에 담기 (.은 모든 파일을 의미)
-```
-git add .
-```
-## 3. 장바구니에 담긴 파일들에 메모 남기기 (버전 생성)
-```
-git commit -m "첫 번째 업로드"
-```
-## 4. 내 컴퓨터와 온라인 저장소 연결 (주소 부분에 복사한 주소 붙여넣기)
-```
-git remote add origin https://github.com/아이디/저장소이름.git
-```
-## 5. 온라인 저장소로 실제로 보내기
-```
-git push -u origin main
-```
+
   
 ## 4. 트러블슈팅
 
