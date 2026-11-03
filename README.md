@@ -13,7 +13,7 @@
 - 확인 명령: `git --version`
 - 출력 결과: `git version 2.56.0`
 - 설명: Git이 이미 설치되어 있어 별도 설치 없이 버전만 확인함.
-- 
+  
 ### 2-2. Docker Desktop 설치
 - 설치 버전: Docker Desktop 4.97.0
 - 설치 결과: Installation succeeded (<img width="1043" height="729" alt="스크린샷 2026-11-03 162520" src="https://github.com/user-attachments/assets/1fdf9558-d316-40d1-88e5-1a0a81d962a7" />
