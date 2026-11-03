@@ -57,10 +57,13 @@ redsun38100018@GNIA-C202-I05 UCRT64 /c/test/작업실 (main)
 - 확인 명령: `git --version`
 - 출력 결과: `git version 2.56.0`
 - 설명: Git이 이미 설치되어 있어 별도 설치 없이 버전만 확인함.
-
-### 2-2. Docker Desktop
-- 설치 과정: (여기에 적기)
-- 확인 명령 / 출력:
+- 
+### 2-2. Docker Desktop 설치
+- 설치 버전: Docker Desktop 4.97.0
+- 설치 결과: Installation succeeded (images/docker.png)
+- 확인 명령어: `docker --version`
+- 출력 결과: (docker --version 결과 붙여넣기)
+- 설명: 공식 사이트에서 AMD64 버전을 받아 설치 완료함.
 
 - - 스크린샷: ![docker 설치](images/docker.png)
 
