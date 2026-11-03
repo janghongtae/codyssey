@@ -21,6 +21,11 @@
 - 확인 명령어: `docker --version`
 - 출력 결과: (Docker version 29.9.2, build a82e528)
 - 설명: 공식 사이트에서 AMD64 버전을 받아 설치 완료함.
+  
+### CPU 아키텍처 확인
+- 명령어: `echo $env:PROCESSOR_ARCHITECTURE`
+- 출력 결과: AMD64
+- 설명: 내 PC는 AMD64 아키텍처이므로 Docker Desktop도 AMD64 버전을 설치함.
 
 ### 2-3. Docker 동작 테스트
 - 명령어: `docker run hello-world`
@@ -82,7 +87,7 @@ git remote add origin https://github.com/아이디/저장소이름.git
 git push -u origin main
 
   
-## 3. 트러블슈팅
+## 4. 트러블슈팅
 
 ### 문제 1: 홈 디렉토리에 잘못 git init 함
 상황: 터미널 경로가 ~ (홈 디렉토리) 인 상태에서 git init 실행함. 프롬프트에 (master)가 떠서 잘못된 위치임을 알게 됨.
@@ -106,7 +111,7 @@ git push -u origin main
          기다린 뒤 다시 실행하니 정상 작동함.
 - 배운 점: Docker 명령은 데몬(엔진)이 켜져 있어야 동작한다.
 
-## 4. 느낀 점
+## 5. 느낀 점
 
 - 처음엔 Docker가 막연히 어렵게 느껴졌지만, 컨테이너를
   '도시락'에 비유하니 개념이 잡혔다.
@@ -114,9 +119,6 @@ git push -u origin main
   명령어는 '어디서 실행하는지'가 중요하다는 걸 배웠다.
 - 다음엔 작업 전에 현재 경로를 꼭 확인하는 습관을 들여야겠다.
 
-### CPU 아키텍처 확인
-- 명령어: `echo $env:PROCESSOR_ARCHITECTURE`
-- 출력 결과: AMD64
-- 설명: 내 PC는 AMD64 아키텍처이므로 Docker Desktop도 AMD64 버전을 설치함.
+
 
 - <img width="1043" height="729" alt="image" src="https://github.com/user-attachments/assets/46abe3ce-9cf0-41ba-b5c6-55e23c610373" />
