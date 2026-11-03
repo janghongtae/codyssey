@@ -60,13 +60,43 @@ redsun38100018@GNIA-C202-I05 UCRT64 /c/test/작업실 (main)
 - 
 ### 2-2. Docker Desktop 설치
 - 설치 버전: Docker Desktop 4.97.0
-- 설치 결과: Installation succeeded (images/docker.png)
+- 설치 결과: Installation succeeded (<img width="1043" height="729" alt="스크린샷 2026-11-03 162520" src="https://github.com/user-attachments/assets/1fdf9558-d316-40d1-88e5-1a0a81d962a7" />
+)
 - 확인 명령어: `docker --version`
-- 출력 결과: (docker --version 결과 붙여넣기)
+- 출력 결과: (Docker version 29.9.2, build a82e528)
 - 설명: 공식 사이트에서 AMD64 버전을 받아 설치 완료함.
 
-- - 스크린샷: ![docker 설치](images/docker.png)
+### 2-3. Docker 동작 테스트
+- 명령어: `docker run hello-world`
+- 출력 결과:
+  (Hello from Docker!
 
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.)
+- 설명:
+- Docker 클라이언트가 Docker 데몬(엔진)에게 요청
+데몬이 Docker Hub에서 hello-world 이미지를 다운로드 (amd64 버전!)
+그 이미지로 컨테이너를 생성해서 실행
+실행 결과를 터미널에 출력
+
+### Docker란?
+- 컨테이너를 쉽게 생성/실행/관리할 수 있게 해주는 도구
+- 클라이언트(명령 입력) + 데몬(실제 작업)으로 구성됨
+- Docker Desktop은 윈도우에서 Docker를 편리하게 쓰는 패키지
+
+ ✅ 정리
+컨테이너 🍱 = 프로그램을 담은 도시락
+Docker 🐳 = 그 도시락을 만들고 실행하는 전체 시스템/도구
+클라이언트(주문) + 데몬(주방)으로 동작
+Docker Desktop = 윈도우에서 쉽게 쓰는 묶음 패키지
+
+  
 ## 3. 트러블슈팅
 ### 문제 1: (제목)
 - 상황:
