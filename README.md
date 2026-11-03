@@ -25,15 +25,16 @@ Docker version 29.9.2, build a82e528
 ```
 - 설명: 공식 사이트에서 AMD64 버전을 받아 설치 완료함.
   
-### CPU 아키텍처 확인
+### 2-3. CPU 아키텍처 확인
 - 명령어: `echo $env:PROCESSOR_ARCHITECTURE`
 - 출력 결과: AMD64
 - 설명: 내 PC는 AMD64 아키텍처이므로 Docker Desktop도 AMD64 버전을 설치함.
 
-### 2-3. Docker 동작 테스트
+### 2-4. Docker 동작 테스트
 - 명령어: `docker run hello-world`
 - 출력 결과:
-  (Hello from Docker!
+```
+ Hello from Docker!
 
 To generate this message, Docker took the following steps:
  1. The Docker client contacted the Docker daemon.
@@ -42,7 +43,8 @@ To generate this message, Docker took the following steps:
  3. The Docker daemon created a new container from that image which runs the
     executable that produces the output you are currently reading.
  4. The Docker daemon streamed that output to the Docker client, which sent it
-    to your terminal.)
+    to your terminal.
+```
 - 설명:
   1. Docker 클라이언트가 데몬에게 요청
   2. 데몬이 Docker Hub에서 이미지 다운로드 (amd64)
@@ -54,11 +56,11 @@ To generate this message, Docker took the following steps:
 - 클라이언트(명령 입력) + 데몬(실제 작업)으로 구성됨
 - Docker Desktop은 윈도우에서 Docker를 편리하게 쓰는 패키지
 
- ✅ 정리
-컨테이너 🍱 = 프로그램을 담은 도시락
-Docker 🐳 = 그 도시락을 만들고 실행하는 전체 시스템/도구
-클라이언트(주문) + 데몬(주방)으로 동작
-Docker Desktop = 윈도우에서 쉽게 쓰는 묶음 패키지
+**✅ 정리**
+-컨테이너 🍱 = 프로그램을 담은 도시락
+-Docker 🐳 = 그 도시락을 만들고 실행하는 전체 시스템/도구
+-클라이언트(주문) + 데몬(주방)으로 동작
+-Docker Desktop = 윈도우에서 쉽게 쓰는 묶음 패키지
 
 ## 3. 깃허브 계정 생성 및 Git 설치
 
@@ -68,27 +70,34 @@ Git 설치하기: 내 컴퓨터의 파일을 깃허브에 올리려면 'Git'이�
 # 내 컴퓨터에 사용자 정보 설정하기
 설치가 끝났다면 터미널(Windows는 CMD 또는 Git Bash)을 열고, 내가 누구인지 Git에게 알려줘야 합니다. 깃허브에 가입한 정보와 동일하게 입력하세요.
 
-# 사용자 이름 설정
+## 사용자 이름 설정
+```
 git config --global user.name "username"
-
-# 사용자 이메일 설정
+```
+## 사용자 이메일 설정
+```
 git config --global user.email "user.name@example.com"
-
-# 1. 현재 폴더를 Git이 관리하도록 설정
+```
+## 1. 현재 폴더를 Git이 관리하도록 설정
+```
 git init
-
-# 2. 올릴 파일들을 장바구니에 담기 (.은 모든 파일을 의미)
+```
+## 2. 올릴 파일들을 장바구니에 담기 (.은 모든 파일을 의미)
+```
 git add .
-
-# 3. 장바구니에 담긴 파일들에 메모 남기기 (버전 생성)
+```
+## 3. 장바구니에 담긴 파일들에 메모 남기기 (버전 생성)
+```
 git commit -m "첫 번째 업로드"
-
-# 4. 내 컴퓨터와 온라인 저장소 연결 (주소 부분에 복사한 주소 붙여넣기)
+```
+## 4. 내 컴퓨터와 온라인 저장소 연결 (주소 부분에 복사한 주소 붙여넣기)
+```
 git remote add origin https://github.com/아이디/저장소이름.git
-
-# 5. 온라인 저장소로 실제로 보내기
+```
+## 5. 온라인 저장소로 실제로 보내기
+```
 git push -u origin main
-
+```
   
 ## 4. 트러블슈팅
 
